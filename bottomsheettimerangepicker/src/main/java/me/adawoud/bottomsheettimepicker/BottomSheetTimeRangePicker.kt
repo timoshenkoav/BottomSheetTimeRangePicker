@@ -173,7 +173,7 @@ class BottomSheetTimeRangePicker : BottomSheetDialogFragment() {
         doActionIfValueIsNotNegative(endMinute, action = {
             doActionBasedOnSdkLevel(
                 actionIfSdkLevelIsHigherThanOrEqualToM = {
-                    endTimePicker.hour = endMinute
+                    endTimePicker.minute = endMinute
                 }
                 ,
                 actionIfSdkLevelIsLowerThanM = {
